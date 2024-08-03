@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission Form</title>
+    <link rel="stylesheet"href="form.css">
+</head>
+<body>
+    <h1>School Admission Form</h1>
+        <div class="form-group">
+        <!-- Student's Full Name in one row -->
+        <div class="form-group">
+         Student's Name : 
+         <input type="text" id="first" placeholder="First"required> 
+         <input type="text" id="Last" placeholder="Last"required>
+         </div>
+     <!-- Class to apply for -->
+     <div class="form-group"><br>
+    <label for="classApply">Class you want to apply for*</label>
+            <input type="text" id="classApply"required >
+            <p>For example : class 2015-2016</p>
+    </div>
+     <!-- Student's Date of Birth -->
+    <div class="form-group"><br>
+        <label for="studentDob">Student's DoB : </label>
+        <input type="date" id="studentDob" required>
+    </div>
+    </div>
+      <!-- Parent/Guardian Full Name in one row -->
+    <div class="form-group"><br>
+        <label for="parentName">Guardian Name : </label>
+            <input type="text" id="parentFirstName" placeholder="First" required>
+            <input type="text" id="parentLastName" placeholder="Last" required>
+    </div>
+            <!-- Current Address -->
+    <div class="form-group"><br>
+        <label for="CurrentAddress">Current Address : </label>
+        <input type="text" id="streetAddress" placeholder="Street Address"><br><br>
+        <input type="text" id="streetAddress2" placeholder="Street Address Line 2"><br><br>
+
+        <div class="flex_container"><br>
+        <input type="text" id="city" placeholder="City">   
+         <input type="text" id="region" placeholder="Region">   
+        </div>
+        <div class="flex_container"><br>
+            <input type="text" id="postalCode" placeholder="Postal / Zip Code">
+            <select id="country" name="country">
+                <option value="">--country--</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="in">India</option>
+                <option value="gb">Bangladesh</option>
+                <option value="gb">Pakistan</option>
+                <option value="gb">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="cn">China</option>
+                <option value="jp">Japan</option>
+                <option value="de">Germany</option>
+                <option value="fr">France</option>
+                <option value="it">Italy</option>
+                <option value="br">Brazil</option>
+                <option value="ru">Russia</option>
+                <option value="za">South Africa</option>
+                <!-- Add more countries as needed -->
+            </select>
+                </div>
+ <!-- Phone Number -->
+ <div class="form-group"><br>
+    <label for="phone">Phone : </label>
+    <input type="tel" id="phone" placeholder="### ### ####">
+</div>
+
+<!-- Email Address -->
+<div class="form-group"><br>
+    <label for="email">Email :</label>
+    <input type="email" id="email" placeholder="Your email" required>
+    <p>Your addmission will be sent via email</p>
+</div>
+</form>
+</div>
+ </div>
+</body>
+</html>
